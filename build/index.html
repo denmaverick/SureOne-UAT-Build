@@ -6,6 +6,16 @@
     <link rel="icon" type="image/svg+xml" href="/LOGO OUTLINE.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Prevent flash of incorrect theme -->
+    <script>
+        (function() {
+            var theme = localStorage.getItem('sureone-theme');
+            if (theme === 'dark' || ((!theme || theme === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+
     <!-- Default meta tags (will be overridden by useSEO hook) -->
     <title>SureOne - Affordable Insurance for Every Juan</title>
     <meta name="description"
@@ -45,13 +55,13 @@
   }
   </script> -->
 
-  <script type="module" crossorigin src="/assets/index-BmLtsY4r.js"></script>
+  <script type="module" crossorigin src="/assets/index-B2CrfN87.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/react-vendor-C5dkL-9h.js">
-  <link rel="modulepreload" crossorigin href="/assets/lucide-CuhW2VvQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/lucide-BktCEXpM.js">
   <link rel="modulepreload" crossorigin href="/assets/gsap-C0eCJjti.js">
   <link rel="modulepreload" crossorigin href="/assets/lenis-CKXJu9B7.js">
   <link rel="modulepreload" crossorigin href="/assets/three-BpZqdwJG.js">
-  <link rel="stylesheet" crossorigin href="/assets/index-CZT7WBvm.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-BnfJK8th.css">
 </head>
 
 <body>
